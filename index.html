@@ -166,7 +166,7 @@ async function askAI(userText) {
         "X-Title": "FRIDAY AI"
       },
       body: JSON.stringify({
-        model: "openai/gpt-4o-mini",
+        model: "mistralai/mistral-7b-instruct"
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           { role: "user", content: userText }
